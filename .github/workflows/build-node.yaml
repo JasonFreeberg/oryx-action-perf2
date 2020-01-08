@@ -1,0 +1,24 @@
+name: Build the node app
+
+on: push
+  # schedule:
+  #   - cron: '0 0/24 * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v1
+
+    - name: Set up Node.js
+      uses: actions/setup-node@v1
+      with:
+        node-version: 10.x
+
+    - name: Running Oryx to build React app
+      uses: microsoft/oryx/actions/oryx-build@corm/github-actions
+      with:
+        source-directory: create-react-app-sample

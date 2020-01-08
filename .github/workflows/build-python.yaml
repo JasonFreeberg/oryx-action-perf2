@@ -1,0 +1,26 @@
+name: Build the python app
+
+on: push
+
+# on:
+#   schedule:
+#     - cron: '0 0/24 * * *'
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Check out repo
+      uses: actions/checkout@v1
+
+    - uses: actions/setup-python@v1
+      with:
+        python-version: '3.7.x' 
+        architecture: 'x64'
+    
+    - name: Running Oryx to build Django app
+      uses: microsoft/oryx/actions/oryx-build@corm/github-actions
+      with:
+        source-directory: django-app
