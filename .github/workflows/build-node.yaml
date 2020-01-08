@@ -23,3 +23,4 @@ jobs:
       with:
         source-directory: create-react-app-sample
         platform-version: '10.15'
+        platform: node
