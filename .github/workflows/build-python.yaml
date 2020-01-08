@@ -24,3 +24,4 @@ jobs:
       uses: microsoft/oryx/actions/oryx-build@corm/github-actions
       with:
         source-directory: django-app
+        platform-version: '3.6'

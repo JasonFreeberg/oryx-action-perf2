@@ -22,3 +22,4 @@ jobs:
       uses: microsoft/oryx/actions/oryx-build@corm/github-actions
       with:
         source-directory: create-react-app-sample
+        platform-version: '10.15'
