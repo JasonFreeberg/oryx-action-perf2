@@ -18,7 +18,7 @@ jobs:
     #   with:
     #     node-version: 10.x
 
-    - name: Running Oryx to build React app
+    - name: Build with oryx action
       uses: microsoft/oryx/actions/oryx-build@corm/github-actions
       with:
         source-directory: create-react-app-sample

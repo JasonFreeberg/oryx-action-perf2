@@ -18,8 +18,8 @@ jobs:
     #   with:
     #     dotnet-version: 3 # Replace with specific dotnet core version
     
-    - name: Using Oryx to create Dockerfile to build and deploy .NET Core 3.0 app
-      uses: microsoft/oryx/actions/oryx-dockerfile@corm/github-actions
+    - name: Build with oryx action
+      uses: microsoft/oryx/actions/oryx-build@corm/github-actions
       id: oryx
       with:
         source-directory: NetCoreApp30.WebApp

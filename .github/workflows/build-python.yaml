@@ -20,7 +20,7 @@ jobs:
     #     python-version: '3.7.x' 
     #     architecture: 'x64'
     
-    - name: Running Oryx to build Django app
+    - name: Build with oryx action
       uses: microsoft/oryx/actions/oryx-build@corm/github-actions
       with:
         source-directory: django-app
