@@ -19,7 +19,7 @@ jobs:
     #     dotnet-version: 3 # Replace with specific dotnet core version
     
     - name: Build with oryx action
-      uses: microsoft/oryx/actions/oryx-build@corm/github-actions
+      uses: azure/appservice-build@v1
       id: oryx
       with:
         source-directory: NetCoreApp30.WebApp
