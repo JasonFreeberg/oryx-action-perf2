@@ -21,7 +21,7 @@ jobs:
     #     architecture: 'x64'
     
     - name: Build with oryx action
-      uses: microsoft/oryx/actions/oryx-build@corm/github-actions
+      uses: azure/appservice-build@v1
       with:
         source-directory: django-app
         platform: python
